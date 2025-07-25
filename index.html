@@ -129,15 +129,16 @@
       </div>
     </div>
   </div>  <div class="counter-box">
-    <p style="color:#aaa; font-size: 0.95rem;">
-      足跡… <span id="visitor" style="color: #39ff14; font-weight: bold;">00873</span> 人目の訪問者
+    <p style="font-size: 0.95rem; color: #aaa;">
+      あなたは… <span id="visitor" style="color: #39ff14; font-weight: bold;">00000</span> 人目の訪問者
+    </p>
+    <p style="font-size: 0.85rem; color: #666;">
+      ※知らんけど。カウンターは偽物です。
     </p>
   </div>  <div class="footer">
     &copy; 2025 web忍者の砦｜開発 by @kkp_webninja
   </div>  <script>
-    const base = 873;
-    const today = new Date().getDate();
-    const visitorCount = base + today;
+    const visitorCount = Math.floor(Math.random() * 5000) + 1000;
     document.getElementById("visitor").textContent = visitorCount.toString().padStart(5, '0');
 
     function toggleScroll() {
