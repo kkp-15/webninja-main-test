@@ -1,123 +1,131 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>web忍者の砦 - 巻物リンク集</title>
   <style>
     body {
-      background-color: #fff8e1;
+      background-color: #121212;
+      color: #eee;
       font-family: "Hiragino Kaku Gothic ProN", sans-serif;
-      margin: 0;
       padding: 1rem;
-      color: #333;
+      margin: 0;
     }
 
     h1 {
-      font-size: 1.8rem;
       text-align: center;
-      margin-bottom: 1rem;
+      font-size: 2rem;
+      color: #e53935;
     }
 
-    .link-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1rem;
+    p.subtitle {
+      text-align: center;
+      color: #ccc;
+      margin-bottom: 1.5rem;
     }
 
-    .link-card {
-      background-color: #fdf6e3;
-      border: 2px solid #333;
-      border-radius: 1rem;
+    .accordion {
+      background-color: #1e1e1e;
+      border: 1px solid #444;
+      border-radius: 12px;
+      margin-bottom: 10px;
       padding: 1rem;
-      box-shadow: 3px 3px 0 #aaa;
-      transition: transform 0.2s;
+      cursor: pointer;
+      transition: background-color 0.3s;
     }
 
-    .link-card:hover {
-      transform: scale(1.03);
+    .accordion:hover {
+      background-color: #2a2a2a;
     }
 
-    .link-card a {
-      font-size: 1.2rem;
-      font-weight: bold;
-      color: #222;
-      text-decoration: none;
-    }
-
-    .link-card .description {
-      margin-top: 0.5rem;
+    .panel {
+      padding: 0.5rem 1rem 1rem;
+      display: none;
+      border-left: 2px solid #e53935;
+      margin-bottom: 1rem;
       font-size: 0.95rem;
-      color: #555;
+      background-color: #181818;
+      border-radius: 0 0 12px 12px;
+    }
+
+    a.link {
+      display: inline-block;
+      margin-top: 0.5rem;
+      font-weight: bold;
+      color: #ffcc00;
+      text-decoration: none;
     }
 
     footer {
       margin-top: 2rem;
       text-align: center;
+      color: #777;
       font-size: 0.9rem;
-      color: #888;
     }
   </style>
-
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2LM85GJN0L"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-2LM85GJN0L');
-  </script>
 </head>
-
 <body>
-  <h1>🏯 web忍者の砦・巻物リンク集</h1>
+  <h1>web忍者の砦</h1>
+  <p class="subtitle">忍びの知恵と術が集う、影の本丸リンク集</p>
 
-  <div class="link-grid">
+  <div class="accordion">🥷 忍者おみくじ</div>
+  <div class="panel">
+    今日の運勢を占う忍法くじ。<br>
+    <a class="link" href="https://kkp-15.github.io/ninja-omikuji/" target="_blank" rel="noopener noreferrer">🔗 開く</a>
+  </div>
 
-    <div class="link-card">
-      <a href="https://kkp-15.github.io/ninja-omikuji/" target="_blank" rel="noopener noreferrer">🥷 忍者おみくじ</a>
-      <div class="description">今日の運勢を占う忍法くじ。ラッキーアイテムも授かるでござる🎴</div>
-    </div>
+  <div class="accordion">🎯 宝くじシミュ</div>
+  <div class="panel">
+    夢と現実の差を知る忍法確率術。<br>
+    <a class="link" href="https://kkp-15.github.io/ninja-takarakuji-sim/" target="_blank" rel="noopener noreferrer">🔗 開く</a>
+  </div>
 
-    <div class="link-card">
-      <a href="https://kkp-15.github.io/ninja-takarakuji-sim/" target="_blank" rel="noopener noreferrer">🎯 宝くじシミュ</a>
-      <div class="description">現実を突きつける忍術。夢と現の差、見せてやろう…（知らんけど）</div>
-    </div>
+  <div class="accordion">🎶 BGMガチャ</div>
+  <div class="panel">
+    運命の1曲を引き当てる音の巻物。<br>
+    <a class="link" href="https://kkp-15.github.io/ninja-bgm-gacha/" target="_blank" rel="noopener noreferrer">🔗 開く</a>
+  </div>
 
-    <div class="link-card">
-      <a href="https://kkp-15.github.io/ninja-bgm-gacha/" target="_blank" rel="noopener noreferrer">🎶 BGMガチャ</a>
-      <div class="description">運命の1曲に出会う忍術。音の巻物で気分を整えるでござる♪</div>
-    </div>
+  <div class="accordion">✅ 忍者バケットリスト</div>
+  <div class="panel">
+    夢を忘れぬための巻物記録帳。<br>
+    <a class="link" href="https://kkp-15.github.io/ninja-bucketlist/" target="_blank" rel="noopener noreferrer">🔗 開く</a>
+  </div>
 
-    <div class="link-card">
-      <a href="https://kkp-15.github.io/ninja-bucketlist/" target="_blank" rel="noopener noreferrer">✅ 忍者バケットリスト</a>
-      <div class="description">拙者のやりたいこと、全て書き記す巻物。夢の忍法管理術📜</div>
-    </div>
+  <div class="accordion">🕓 もくもくタイマー</div>
+  <div class="panel">
+    修行時間の集中術、もくもくの術。<br>
+    <a class="link" href="https://kkp-15.github.io/ninja-mokumoku-time/" target="_blank" rel="noopener noreferrer">🔗 開く</a>
+  </div>
 
-    <div class="link-card">
-      <a href="https://kkp-15.github.io/ninja-mokumoku-time/" target="_blank" rel="noopener noreferrer">🕓 もくもくタイマー</a>
-      <div class="description">修行の時間を刻む忍者の砂時計。集中力アップの術！</div>
-    </div>
+  <div class="accordion">🟨 イエローコンプリート</div>
+  <div class="panel">
+    黄色だけを見極めよ！忍者の反射修行。<br>
+    <a class="link" href="https://kkp-15.github.io/ninja-yellow-com/" target="_blank" rel="noopener noreferrer">🔗 開く</a>
+  </div>
 
-    <div class="link-card">
-      <a href="https://kkp-15.github.io/ninja-yellow-com/" target="_blank" rel="noopener noreferrer">🟨 イエローコンプリート</a>
-      <div class="description">黄色だけを集めきれ！反射と判断の忍術トレーニング🔥</div>
-    </div>
-
-    <div class="link-card">
-      <a href="https://kkp-15.github.io/ninja-carp-number-Q/" target="_blank" rel="noopener noreferrer">⚾ CARP NUMBER QUIZ</a>
-      <div class="description">広島カープ選手の背番号、何人覚えているか？ 忍者の記憶術🔥</div>
-    </div>
-
+  <div class="accordion">⚾ CARP NUMBER QUIZ</div>
+  <div class="panel">
+    カープ選手の背番号記憶術に挑戦！<br>
+    <a class="link" href="https://kkp-15.github.io/ninja-carp-number-Q/" target="_blank" rel="noopener noreferrer">🔗 開く</a>
   </div>
 
   <footer>
-    足跡… <span id="fakeCount"></span> 人目の訪問者 🐾  （知らんけど）<br>
+    あなたは <span id="fakeCount"></span> 人目の訪問者（知らんけど）<br>
     ※このカウンターは気まぐれです。
   </footer>
 
   <script>
-    // 気まぐれカウンター（ダミー）
+    const acc = document.getElementsByClassName("accordion");
+    for (let i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        const panel = this.nextElementSibling;
+        panel.style.display = panel.style.display === "block" ? "none" : "block";
+      });
+    }
+
     const count = 1000 + Math.floor(Math.random() * 9000);
     document.getElementById("fakeCount").textContent = count.toString().padStart(5, '0');
   </script>
