@@ -1,105 +1,155 @@
-<!DOCTYPE html><html lang="ja">
+<!DOCTYPE html>
+<html lang="ja">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>web忍者の砦</title>
+  <title>web忍者の砦 - 巻物リンク集</title>
   <style>
     body {
       background-color: #121212;
-      color: #eee;
       font-family: "Hiragino Kaku Gothic ProN", sans-serif;
-      margin: 0;
+      color: #f4f4f4;
       padding: 1rem;
-    }h1 {
-  text-align: center;
-  color: #f44336;
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
+      margin: 0;
+    }
 
-.subtitle {
-  text-align: center;
-  color: #ccc;
-  margin-bottom: 2rem;
-}
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      color: #e53935;
+      margin-bottom: 0.2rem;
+    }
 
-.link-box {
-  background-color: #1e1e1e;
-  border-radius: 10px;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  transition: transform 0.2s;
-}
+    .subtitle {
+      text-align: center;
+      color: #ccc;
+      margin-bottom: 1.5rem;
+    }
 
-.link-box:hover {
-  transform: scale(1.02);
-}
+    .accordion {
+      background-color: #1f1f1f;
+      color: #f4f4f4;
+      cursor: pointer;
+      padding: 1rem;
+      width: 100%;
+      text-align: left;
+      border: none;
+      outline: none;
+      transition: background-color 0.3s;
+      font-size: 1.2rem;
+      border-radius: 12px;
+      margin-bottom: 8px;
+    }
 
-.link-box h2 {
-  margin: 0;
-  font-size: 1.2rem;
-  display: flex;
-  align-items: center;
-}
+    .accordion:hover {
+      background-color: #333;
+    }
 
-.link-box p {
-  margin: 0.5rem 0 0;
-  color: #bbb;
-  font-size: 0.9rem;
-}
+    .panel {
+      padding: 0 1rem 1rem;
+      display: none;
+      background-color: #181818;
+      border-left: 4px solid #e53935;
+      border-radius: 0 0 12px 12px;
+      margin-bottom: 1rem;
+    }
 
-.link-box a {
-  color: inherit;
-  text-decoration: none;
-}
+    .panel a {
+      color: #ffcc00;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-footer {
-  text-align: center;
-  font-size: 0.85rem;
-  color: #777;
-  margin-top: 2rem;
-}
+    .panel a:hover {
+      text-decoration: underline;
+    }
 
+    footer {
+      margin-top: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
   </style>
+
+  <!-- アナリティクス -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2LM85GJN0L"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2LM85GJN0L');
+  </script>
 </head>
 <body>
+
   <h1>web忍者の砦</h1>
-  <div class="subtitle">忍びの知恵と術が集う、影の本丸リンク集</div>  <div class="link-box">
-    <a href="https://kkp-15.github.io/ninja-omikuji/" target="_blank">
-      <h2>🥷 忍者おみくじ</h2>
-      <p>毎日の運を占う開運忍法</p>
-    </a>
-  </div>  <div class="link-box">
-    <a href="https://kkp-15.github.io/ninja-takarakuji-sim/" target="_blank">
-      <h2>🎯 宝くじシミュ</h2>
-      <p>現実を斬る！リアルな当選確率</p>
-    </a>
-  </div>  <div class="link-box">
-    <a href="https://kkp-15.github.io/ninja-saving-rate/" target="_blank">
-      <h2>💰 貯金率計算</h2>
-      <p>支出を見極める忍法会計術</p>
-    </a>
-  </div>  <div class="link-box">
-    <a href="https://kkp-15.github.io/ninja-mokumoku-time/" target="_blank">
-      <h2>🕓 作業タイマー</h2>
-      <p>集中修行に最適なもくもく術</p>
-    </a>
-  </div>  <div class="link-box">
-    <a href="https://kkp-15.github.io/ninja-bgm-onimode/" target="_blank">
-      <h2>🔥 ONI MODE</h2>
-      <p>覚醒の5分！忍者EDM</p>
-    </a>
-  </div>  <div class="link-box">
-    <a href="https://kkp-15.github.io/ninja-fukugyo-navi/" target="_blank">
-      <h2>🈶 副業ナビ</h2>
-      <p>あなたに合った影の稼ぎ術</p>
-    </a>
-  </div>  <footer>
-    あなたは <span id="counter"></span> 人目の訪問者 🐾（知らんけど）<br>
-    ※このカウンターは気まぐれです
-  </footer>  <script>
+  <p class="subtitle">忍びの知恵と術が集う、影の本丸リンク集</p>
+
+  <!-- 巻物ボタンと内容 -->
+  <button class="accordion">🥷 忍者おみくじ</button>
+  <div class="panel">
+    <p>毎日の運を占う開運忍法</p>
+    <a href="https://kkp-15.github.io/ninja-omikuji/" target="_blank" rel="noopener noreferrer">▶ サイトを開く</a>
+  </div>
+
+  <button class="accordion">🎯 宝くじシミュ</button>
+  <div class="panel">
+    <p>現実を斬る！リアルな当選確率</p>
+    <a href="https://kkp-15.github.io/ninja-takarakuji-sim/" target="_blank" rel="noopener noreferrer">▶ サイトを開く</a>
+  </div>
+
+  <button class="accordion">🎶 BGMガチャ</button>
+  <div class="panel">
+    <p>運命の1曲に出会う忍術</p>
+    <a href="https://kkp-15.github.io/ninja-bgm-gacha/" target="_blank" rel="noopener noreferrer">▶ サイトを開く</a>
+  </div>
+
+  <button class="accordion">✅ 忍者バケットリスト</button>
+  <div class="panel">
+    <p>拙者のやりたいこと、夢の忍法管理術</p>
+    <a href="https://kkp-15.github.io/ninja-bucketlist/" target="_blank" rel="noopener noreferrer">▶ サイトを開く</a>
+  </div>
+
+  <button class="accordion">🕓 もくもくタイマー</button>
+  <div class="panel">
+    <p>集中修行に最適なもくもく術</p>
+    <a href="https://kkp-15.github.io/ninja-mokumoku-time/" target="_blank" rel="noopener noreferrer">▶ サイトを開く</a>
+  </div>
+
+  <button class="accordion">🟨 イエローコンプリート</button>
+  <div class="panel">
+    <p>黄色を集めきれ！忍術トレーニング</p>
+    <a href="https://kkp-15.github.io/ninja-yellow-com/" target="_blank" rel="noopener noreferrer">▶ サイトを開く</a>
+  </div>
+
+  <button class="accordion">⚾ CARP NUMBER QUIZ</button>
+  <div class="panel">
+    <p>広島カープ選手の背番号 忍者の記憶術🔥</p>
+    <a href="https://kkp-15.github.io/ninja-carp-number-Q/" target="_blank" rel="noopener noreferrer">▶ サイトを開く</a>
+  </div>
+
+  <!-- 足跡カウンター -->
+  <footer>
+    あなたは… <span id="fakeCount"></span> 人目の訪問者 🐾<br>
+    ※知らんけど（このカウンターは気まぐれ）
+  </footer>
+
+  <!-- 巻物開閉スクリプト -->
+  <script>
+    const acc = document.getElementsByClassName("accordion");
+    for (let i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        const panel = this.nextElementSibling;
+        panel.style.display = (panel.style.display === "block") ? "none" : "block";
+      });
+    }
+
+    // 偽カウンター
     const count = 1000 + Math.floor(Math.random() * 9000);
-    document.getElementById("counter").textContent = count.toString().padStart(5, '0');
-  </script></body>
+    document.getElementById("fakeCount").textContent = count.toString().padStart(5, '0');
+  </script>
+
+</body>
 </html>
