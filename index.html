@@ -1,133 +1,105 @@
-<!DOCTYPE html>
-<html lang="ja">
+<!DOCTYPE html><html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>web忍者の砦 - 巻物リンク集</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>web忍者の砦</title>
   <style>
     body {
       background-color: #121212;
       color: #eee;
       font-family: "Hiragino Kaku Gothic ProN", sans-serif;
-      padding: 1rem;
       margin: 0;
-    }
-
-    h1 {
-      text-align: center;
-      font-size: 2rem;
-      color: #e53935;
-    }
-
-    p.subtitle {
-      text-align: center;
-      color: #ccc;
-      margin-bottom: 1.5rem;
-    }
-
-    .accordion {
-      background-color: #1e1e1e;
-      border: 1px solid #444;
-      border-radius: 12px;
-      margin-bottom: 10px;
       padding: 1rem;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
+    }h1 {
+  text-align: center;
+  color: #f44336;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
 
-    .accordion:hover {
-      background-color: #2a2a2a;
-    }
+.subtitle {
+  text-align: center;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
 
-    .panel {
-      padding: 0.5rem 1rem 1rem;
-      display: none;
-      border-left: 2px solid #e53935;
-      margin-bottom: 1rem;
-      font-size: 0.95rem;
-      background-color: #181818;
-      border-radius: 0 0 12px 12px;
-    }
+.link-box {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: transform 0.2s;
+}
 
-    a.link {
-      display: inline-block;
-      margin-top: 0.5rem;
-      font-weight: bold;
-      color: #ffcc00;
-      text-decoration: none;
-    }
+.link-box:hover {
+  transform: scale(1.02);
+}
 
-    footer {
-      margin-top: 2rem;
-      text-align: center;
-      color: #777;
-      font-size: 0.9rem;
-    }
+.link-box h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.link-box p {
+  margin: 0.5rem 0 0;
+  color: #bbb;
+  font-size: 0.9rem;
+}
+
+.link-box a {
+  color: inherit;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: 2rem;
+}
+
   </style>
 </head>
 <body>
   <h1>web忍者の砦</h1>
-  <p class="subtitle">忍びの知恵と術が集う、影の本丸リンク集</p>
-
-  <div class="accordion">🥷 忍者おみくじ</div>
-  <div class="panel">
-    今日の運勢を占う忍法くじ。<br>
-    <a class="link" href="https://kkp-15.github.io/ninja-omikuji/" target="_blank" rel="noopener noreferrer">🔗 開く</a>
-  </div>
-
-  <div class="accordion">🎯 宝くじシミュ</div>
-  <div class="panel">
-    夢と現実の差を知る忍法確率術。<br>
-    <a class="link" href="https://kkp-15.github.io/ninja-takarakuji-sim/" target="_blank" rel="noopener noreferrer">🔗 開く</a>
-  </div>
-
-  <div class="accordion">🎶 BGMガチャ</div>
-  <div class="panel">
-    運命の1曲を引き当てる音の巻物。<br>
-    <a class="link" href="https://kkp-15.github.io/ninja-bgm-gacha/" target="_blank" rel="noopener noreferrer">🔗 開く</a>
-  </div>
-
-  <div class="accordion">✅ 忍者バケットリスト</div>
-  <div class="panel">
-    夢を忘れぬための巻物記録帳。<br>
-    <a class="link" href="https://kkp-15.github.io/ninja-bucketlist/" target="_blank" rel="noopener noreferrer">🔗 開く</a>
-  </div>
-
-  <div class="accordion">🕓 もくもくタイマー</div>
-  <div class="panel">
-    修行時間の集中術、もくもくの術。<br>
-    <a class="link" href="https://kkp-15.github.io/ninja-mokumoku-time/" target="_blank" rel="noopener noreferrer">🔗 開く</a>
-  </div>
-
-  <div class="accordion">🟨 イエローコンプリート</div>
-  <div class="panel">
-    黄色だけを見極めよ！忍者の反射修行。<br>
-    <a class="link" href="https://kkp-15.github.io/ninja-yellow-com/" target="_blank" rel="noopener noreferrer">🔗 開く</a>
-  </div>
-
-  <div class="accordion">⚾ CARP NUMBER QUIZ</div>
-  <div class="panel">
-    カープ選手の背番号記憶術に挑戦！<br>
-    <a class="link" href="https://kkp-15.github.io/ninja-carp-number-Q/" target="_blank" rel="noopener noreferrer">🔗 開く</a>
-  </div>
-
-  <footer>
-    あなたは <span id="fakeCount"></span> 人目の訪問者（知らんけど）<br>
-    ※このカウンターは気まぐれです。
-  </footer>
-
-  <script>
-    const acc = document.getElementsByClassName("accordion");
-    for (let i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        const panel = this.nextElementSibling;
-        panel.style.display = panel.style.display === "block" ? "none" : "block";
-      });
-    }
-
+  <div class="subtitle">忍びの知恵と術が集う、影の本丸リンク集</div>  <div class="link-box">
+    <a href="https://kkp-15.github.io/ninja-omikuji/" target="_blank">
+      <h2>🥷 忍者おみくじ</h2>
+      <p>毎日の運を占う開運忍法</p>
+    </a>
+  </div>  <div class="link-box">
+    <a href="https://kkp-15.github.io/ninja-takarakuji-sim/" target="_blank">
+      <h2>🎯 宝くじシミュ</h2>
+      <p>現実を斬る！リアルな当選確率</p>
+    </a>
+  </div>  <div class="link-box">
+    <a href="https://kkp-15.github.io/ninja-saving-rate/" target="_blank">
+      <h2>💰 貯金率計算</h2>
+      <p>支出を見極める忍法会計術</p>
+    </a>
+  </div>  <div class="link-box">
+    <a href="https://kkp-15.github.io/ninja-mokumoku-time/" target="_blank">
+      <h2>🕓 作業タイマー</h2>
+      <p>集中修行に最適なもくもく術</p>
+    </a>
+  </div>  <div class="link-box">
+    <a href="https://kkp-15.github.io/ninja-bgm-onimode/" target="_blank">
+      <h2>🔥 ONI MODE</h2>
+      <p>覚醒の5分！忍者EDM</p>
+    </a>
+  </div>  <div class="link-box">
+    <a href="https://kkp-15.github.io/ninja-fukugyo-navi/" target="_blank">
+      <h2>🈶 副業ナビ</h2>
+      <p>あなたに合った影の稼ぎ術</p>
+    </a>
+  </div>  <footer>
+    あなたは <span id="counter"></span> 人目の訪問者 🐾（知らんけど）<br>
+    ※このカウンターは気まぐれです
+  </footer>  <script>
     const count = 1000 + Math.floor(Math.random() * 9000);
-    document.getElementById("fakeCount").textContent = count.toString().padStart(5, '0');
-  </script>
-</body>
+    document.getElementById("counter").textContent = count.toString().padStart(5, '0');
+  </script></body>
 </html>
