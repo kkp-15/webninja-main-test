@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="ja">
+<!DOCTYPE html>
+<html lang="ja">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,132 +11,143 @@
       font-family: "Hiragino Kaku Gothic ProN", sans-serif;
       padding: 1rem;
       margin: 0;
-    }h1 {
-  text-align: center;
-  font-size: 2rem;
-  color: #e53935;
-}
+    }
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      color: #e53935;
+    }
+    h2 {
+      font-size: 1.3rem;
+      margin-top: 2rem;
+      color: #ffcc00;
+    }
+    .accordion {
+      background-color: #1e1e1e;
+      color: #fff;
+      cursor: pointer;
+      padding: 1rem;
+      margin-bottom: 5px;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 1.1rem;
+      transition: background-color 0.3s;
+      border-radius: 8px;
+    }
+    .accordion:hover, .active {
+      background-color: #333;
+    }
+    .panel {
+      padding: 0 1rem 1rem;
+      display: none;
+      overflow: hidden;
+      background-color: #1a1a1a;
+      margin-bottom: 10px;
+      border-radius: 0 0 8px 8px;
+    }
+    .panel p {
+      margin: 0.5rem 0;
+      line-height: 1.6;
+      font-size: 0.95rem;
+    }
+    a.link {
+      color: #ffcc00;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 0.5rem;
+    }
+    footer {
+      margin-top: 2rem;
+      text-align: center;
+      color: #777;
+      font-size: 0.9rem;
+    }
+  </style>
 
-.accordion {
-  background-color: #1e1e1e;
-  color: #fff;
-  cursor: pointer;
-  padding: 1rem;
-  margin-bottom: 5px;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 1.1rem;
-  transition: background-color 0.3s;
-  border-radius: 8px;
-}
-
-.accordion:hover, .active {
-  background-color: #333;
-}
-
-.panel {
-  padding: 0 1rem 1rem;
-  display: none;
-  overflow: hidden;
-  background-color: #1a1a1a;
-  margin-bottom: 10px;
-  border-radius: 0 0 8px 8px;
-}
-
-.panel p {
-  margin: 0.5rem 0;
-  line-height: 1.6;
-  font-size: 0.95rem;
-}
-
-a.link {
-  color: #ffcc00;
-  text-decoration: none;
-  font-weight: bold;
-  display: inline-block;
-  margin-top: 0.5rem;
-}
-
-footer {
-  margin-top: 2rem;
-  text-align: center;
-  color: #777;
-  font-size: 0.9rem;
-}
-
-  </style>  <!-- Google Analytics -->  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2LM85GJN0L"></script>  <script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2LM85GJN0L"></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-2LM85GJN0L');
-  </script></head>
+  </script>
+</head>
 <body>
-  <h1>web忍者の砦 - 巻物リンク集</h1><button class="accordion">🎴 忍者おみくじ</button>
+  <h1>web忍者の砦 - 巻物リンク集</h1>
 
+  <h2>🧙‍♂️ 占い・診断の巻物</h2>
+  <button class="accordion">🎴 忍者おみくじ</button>
   <div class="panel">
     <p>今日の運勢を占う忍術の巻物。<br>開けばラッキーアイテムが授かるでござる！</p>
     <a class="link" href="https://kkp-15.github.io/ninja-omikuji/" target="_blank" rel="noopener noreferrer">▶ サイトを開く</a>
-  </div><button class="accordion">🎯 宝くじシミュ</button>
+  </div>
 
+  <button class="accordion">🎯 宝くじシミュ</button>
   <div class="panel">
     <p>夢か現か…宝くじの現実を忍法で暴く。<br>当選確率の厳しさを思い知るでござる。</p>
     <a class="link" href="https://kkp-15.github.io/ninja-takarakuji-sim/" target="_blank" rel="noopener noreferrer">▶ サイトを開く</a>
-  </div><button class="accordion">🎶 BGMガチャ</button>
+  </div>
 
+  <h2>⏱ 時間術・集中の巻物</h2>
+  <button class="accordion">🎶 BGMガチャ</button>
   <div class="panel">
     <p>運命の一曲を引き当てる巻物。<br>集中したいとき、気分を上げたいときにおすすめ！</p>
     <a class="link" href="https://kkp-15.github.io/ninja-bgm-gacha/" target="_blank" rel="noopener noreferrer">▶ サイトを開く</a>
-  </div><button class="accordion">✅ バケットリスト</button>
+  </div>
 
-  <div class="panel">
-    <p>人生でやりたいことを記す忍者の夢帳。<br>達成するたびに己の道が開かれるでござる！</p>
-    <a class="link" href="https://kkp-15.github.io/ninja-bucketlist/" target="_blank" rel="noopener noreferrer">▶ サイトを開く</a>
-  </div><button class="accordion">🕓 もくもくタイマー</button>
-
+  <button class="accordion">🕓 もくもくタイマー</button>
   <div class="panel">
     <p>修行の刻を刻む忍者の砂時計。<br>集中と休憩のバランスを極めるのじゃ！</p>
     <a class="link" href="https://kkp-15.github.io/ninja-mokumoku-time/" target="_blank" rel="noopener noreferrer">▶ サイトを開く</a>
-  </div><button class="accordion">🟨 イエローコンプリート</button>
+  </div>
 
+  <h2>📜 記録と夢の巻物</h2>
+  <button class="accordion">✅ バケットリスト</button>
+  <div class="panel">
+    <p>人生でやりたいことを記す忍者の夢帳。<br>達成するたびに己の道が開かれるでござる！</p>
+    <a class="link" href="https://kkp-15.github.io/ninja-bucketlist/" target="_blank" rel="noopener noreferrer">▶ サイトを開く</a>
+  </div>
+
+  <h2>🎮 忍術ゲームの巻物</h2>
+  <button class="accordion">🟨 イエローコンプリート</button>
   <div class="panel">
     <p>反射と判断の修行じゃ！<br>黄色を見極め、完全制覇を目指すでござる🔥</p>
     <a class="link" href="https://kkp-15.github.io/ninja-yellow-com/" target="_blank" rel="noopener noreferrer">▶ サイトを開く</a>
-  </div><button class="accordion">⚾ CARP NUMBER QUIZ</button>
+  </div>
 
+  <button class="accordion">⚾ CARP NUMBER QUIZ</button>
   <div class="panel">
     <p>広島カープの背番号を記憶する記憶術！<br>君のカープ愛、いかほどか試してみよ！</p>
     <a class="link" href="https://kkp-15.github.io/ninja-carp-number-Q/" target="_blank" rel="noopener noreferrer">▶ サイトを開く</a>
-  </div>  <footer>
+  </div>
+
+  <footer>
     足跡… <span id="fakeCount"></span> 人目の訪問者 🐾（知らんけど）<br>
     ※このカウンターは気まぐれです。
-  </footer>  <script>
+  </footer>
+
+  <script>
     const acc = document.getElementsByClassName("accordion");
     const panels = document.getElementsByClassName("panel");
-
     for (let i = 0; i < acc.length; i++) {
-      // 最初の巻物だけ開く
-      if (i === 0) {
-        panels[i].style.display = "block";
-        acc[i].classList.add("active");
-      }
       acc[i].addEventListener("click", function () {
         const panel = this.nextElementSibling;
         const isOpen = panel.style.display === "block";
-
         for (let j = 0; j < panels.length; j++) {
           panels[j].style.display = "none";
           acc[j].classList.remove("active");
         }
-
         if (!isOpen) {
           panel.style.display = "block";
           this.classList.add("active");
         }
       });
     }
-
     const count = 1000 + Math.floor(Math.random() * 9000);
     document.getElementById("fakeCount").textContent = count.toString().padStart(5, '0');
-  </script></body>
+  </script>
+</body>
 </html>
