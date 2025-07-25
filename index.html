@@ -34,6 +34,20 @@
       color: #ccc;
       font-size: 1rem;
     }
+    .reveal-button {
+      margin-top: 1.5rem;
+      padding: 0.7rem 1.2rem;
+      background-color: #333;
+      color: #fff;
+      font-size: 1rem;
+      border: 1px solid #555;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .reveal-button:hover {
+      background-color: #444;
+    }
     .link-grid {
       display: grid;
       grid-template-columns: 1fr;
@@ -41,6 +55,7 @@
       padding: 2rem 1rem;
       max-width: 500px;
       margin: auto;
+      animation: fadeIn 0.8s ease-in-out;
     }
     .link-card {
       background: #2c2c2c;
@@ -75,39 +90,48 @@
       color: #888;
       padding: 2rem 0;
     }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.96); }
+      to { opacity: 1; transform: scale(1); }
+    }
   </style></head>
 <body>
   <header>
     <h1>web忍者の砦</h1>
     <p class="subtitle">忍びの知恵と術が集う、影の本丸リンク集</p>
-  </header>  <div class="link-grid">
-    <div class="link-card">
-      <a href="https://kkp-15.github.io/ninja-omikuji/" target="_blank">🥷 忍者おみくじ</a>
-      <div class="description">毎日の運を占う開運忍法</div>
-    </div>
-    <div class="link-card">
-      <a href="https://kkp-15.github.io/ninja-takarakuji-sim/" target="_blank">🎯 宝くじシミュ</a>
-      <div class="description">現実を斬る！リアルな当選確率</div>
-    </div>
-    <div class="link-card">
-      <a href="https://kkp-15.github.io/savings-rate-calc/" target="_blank">💰 貯金率計算</a>
-      <div class="description">支出を見極める忍法会計術</div>
-    </div>
-    <div class="link-card">
-      <a href="https://kkp-15.github.io/ninja-focus-timer/" target="_blank">🕓 作業タイマー</a>
-      <div class="description">集中修行に最適なもくもく術</div>
-    </div>
-    <div class="link-card">
-      <a href="https://kkp-15.github.io/oni-mode/" target="_blank">🔥 ONI MODE</a>
-      <div class="description">覚醒の5分！忍者EDM</div>
-    </div>
-    <div class="link-card">
-      <a href="https://kkp-15.github.io/sidejob-navi/" target="_blank">🧧 副業ナビ</a>
-      <div class="description">あなたに合った影の稼ぎ術</div>
+  </header><button class="reveal-button" onclick="toggleScroll()">📜 忍術発動！巻物を開く</button>
+
+  <div id="linkSection" style="display:none;">
+    <div class="link-grid">
+      <div class="link-card">
+        <a href="https://kkp-15.github.io/ninja-omikuji/" target="_blank">🥷 忍者おみくじ</a>
+        <div class="description">毎日の運を占う開運忍法</div>
+      </div>
+      <div class="link-card">
+        <a href="https://kkp-15.github.io/ninja-takarakuji-sim/" target="_blank">🎯 宝くじシミュ</a>
+        <div class="description">現実を斬る！リアルな当選確率</div>
+      </div>
+      <div class="link-card">
+        <a href="https://kkp-15.github.io/savings-rate-calc/" target="_blank">💰 貯金率計算</a>
+        <div class="description">支出を見極める忍法会計術</div>
+      </div>
+      <div class="link-card">
+        <a href="https://kkp-15.github.io/ninja-focus-timer/" target="_blank">🕓 作業タイマー</a>
+        <div class="description">集中修行に最適なもくもく術</div>
+      </div>
+      <div class="link-card">
+        <a href="https://kkp-15.github.io/oni-mode/" target="_blank">🔥 ONI MODE</a>
+        <div class="description">覚醒の5分！忍者EDM</div>
+      </div>
+      <div class="link-card">
+        <a href="https://kkp-15.github.io/sidejob-navi/" target="_blank">🧧 副業ナビ</a>
+        <div class="description">あなたに合った影の稼ぎ術</div>
+      </div>
     </div>
   </div>  <div class="counter-box">
-    <p class="label">記録せし影：<span id="visitor">00873</span> 番目</p>
-    <p style="color:#aaa; font-size: 0.9rem;">……足音、確かに残った。</p>
+    <p style="color:#aaa; font-size: 0.95rem;">
+      足跡… <span id="visitor" style="color: #39ff14; font-weight: bold;">00873</span> 人目の訪問者
+    </p>
   </div>  <div class="footer">
     &copy; 2025 web忍者の砦｜開発 by @kkp_webninja
   </div>  <script>
@@ -115,5 +139,10 @@
     const today = new Date().getDate();
     const visitorCount = base + today;
     document.getElementById("visitor").textContent = visitorCount.toString().padStart(5, '0');
+
+    function toggleScroll() {
+      const section = document.getElementById('linkSection');
+      section.style.display = (section.style.display === 'none') ? 'block' : 'none';
+    }
   </script></body>
 </html>
