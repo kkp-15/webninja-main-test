@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="ja">
+<!DOCTYPE html><html lang="ja">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,169 +10,113 @@
       font-family: "Hiragino Kaku Gothic ProN", sans-serif;
       padding: 1rem;
       margin: 0;
-    }
+    }h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #e53935;
+}
 
-    h1 {
-      text-align: center;
-      font-size: 2rem;
-      color: #e53935;
-    }
+hr {
+  border: none;
+  border-top: 1px solid #444;
+  margin: 1.5rem 0;
+}
 
-    .big-accordion {
-      background-color: #222;
-      color: #fff;
-      cursor: pointer;
-      padding: 1rem;
-      margin: 10px 0;
-      border: none;
-      text-align: left;
-      font-size: 1.2rem;
-      border-radius: 8px;
-    }
+.big-accordion {
+  background-color: #222;
+  color: #fff;
+  cursor: pointer;
+  padding: 1rem;
+  margin: 10px 0;
+  border: none;
+  text-align: left;
+  font-size: 1.2rem;
+  border-radius: 8px;
+}
 
-    .big-accordion:hover,
-    .big-accordion.active {
-      background-color: #333;
-    }
+.big-accordion:hover,
+.big-accordion.active {
+  background-color: #333;
+}
 
-    .accordion {
-      background-color: #1e1e1e;
-      color: #fff;
-      cursor: pointer;
-      padding: 0.8rem 1rem;
-      margin: 5px 0;
-      border: none;
-      text-align: left;
-      font-size: 1rem;
-      border-radius: 6px;
-      margin-left: 1rem;
-    }
+.accordion {
+  background-color: #1e1e1e;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.8rem 1rem;
+  margin: 5px 0;
+  border: none;
+  text-align: left;
+  font-size: 1rem;
+  border-radius: 6px;
+  margin-left: 1rem;
+}
 
-    .accordion:hover,
-    .accordion.active {
-      background-color: #333;
-    }
+.accordion:hover,
+.accordion.active {
+  background-color: #333;
+}
 
-    .big-panel,
-    .panel {
-      display: none;
-      overflow: hidden;
-      margin-left: 0.5rem;
-    }
+.big-panel,
+.panel {
+  display: none;
+  overflow: hidden;
+  margin-left: 0.5rem;
+}
 
-    .panel {
-      background-color: #1a1a1a;
-      padding: 0 1rem 1rem;
-      margin-bottom: 10px;
-      border-radius: 0 0 6px 6px;
-    }
+.panel {
+  background-color: #1a1a1a;
+  padding: 0 1rem 1rem;
+  margin-bottom: 10px;
+  border-radius: 0 0 6px 6px;
+}
 
-    .panel p {
-      margin: 0.5rem 0;
-      line-height: 1.5;
-      font-size: 0.95rem;
-    }
+.panel p {
+  margin: 0.5rem 0;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
 
-    a.link {
-      color: #ffcc00;
-      text-decoration: none;
-      font-weight: bold;
-      display: inline-block;
-      margin-top: 0.5rem;
-    }
+a.link {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
 
-    footer {
-      margin-top: 2rem;
-      text-align: center;
-      color: #888;
-      font-size: 0.9rem;
-    }
+footer {
+  margin-top: 2rem;
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+}
 
-    footer a {
-      color: #ffcc00;
-      text-decoration: none;
-      font-weight: bold;
-    }
-  </style>
+footer a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2LM85GJN0L"></script>
-  <script>
+.highlight-count {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+  </style>  <!-- Google Analytics -->  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2LM85GJN0L"></script>  <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-2LM85GJN0L');
-  </script>
-</head>
+  </script></head>
 <body>
-  <h1>web忍者の砦 - 巻物リンク集</h1>
-
-  <!-- 占い・診断 -->
-  <button class="big-accordion">🧙‍♂️ 占い・診断の巻物</button>
-  <div class="big-panel">
-    <button class="accordion">🎴 忍者おみくじ</button>
-    <div class="panel">
-      <p>今日の運勢を占う巻物。ラッキーアイテムも授かるでござる！</p>
-      <a class="link" href="https://kkp-15.github.io/ninja-omikuji/" target="_blank" rel="noopener noreferrer">▶ サイトを開く</a>
-    </div>
-
-    <button class="accordion">🎯 宝くじシミュ</button>
-    <div class="panel">
-      <p>夢と現実のギャップを暴く忍法シミュレーター！</p>
-      <a class="link" href="https://kkp-15.github.io/ninja-takarakuji-sim/" target="_blank" rel="noopener noreferrer">▶ サイトを開く</a>
-    </div>
-  </div>
-
-  <!-- 時間術 -->
-  <button class="big-accordion">⏱ 時間術・集中の巻物</button>
-  <div class="big-panel">
-    <button class="accordion">🎶 BGMガチャ</button>
-    <div class="panel">
-      <p>集中したいときに。運命の一曲を引き当てる巻物。</p>
-      <a class="link" href="https://kkp-15.github.io/ninja-bgm-gacha/" target="_blank" rel="noopener noreferrer">▶ サイトを開く</a>
-    </div>
-
-    <button class="accordion">🕓 もくもくタイマー</button>
-    <div class="panel">
-      <p>集中修行のための忍者タイマー。作業と休憩を極めよ！</p>
-      <a class="link" href="https://kkp-15.github.io/ninja-mokumoku-time/" target="_blank" rel="noopener noreferrer">▶ サイトを開く</a>
-    </div>
-  </div>
-
-  <!-- 記録系 -->
-  <button class="big-accordion">📜 記録と夢の巻物</button>
-  <div class="big-panel">
-    <button class="accordion">✅ バケットリスト</button>
-    <div class="panel">
-      <p>忍びの夢を記す帳。目標に向かって進むでござる！</p>
-      <a class="link" href="https://kkp-15.github.io/ninja-bucketlist/" target="_blank" rel="noopener noreferrer">▶ サイトを開く</a>
-    </div>
-  </div>
-
-  <!-- ゲーム -->
-  <button class="big-accordion">🎮 忍術ゲームの巻物</button>
-  <div class="big-panel">
-    <button class="accordion">🟨 イエローコンプリート</button>
-    <div class="panel">
-      <p>黄色を極めし者が勝つ！集中力が試されるでござる。</p>
-      <a class="link" href="https://kkp-15.github.io/ninja-yellow-com/" target="_blank" rel="noopener noreferrer">▶ サイトを開く</a>
-    </div>
-
-    <button class="accordion">⚾ CARP NUMBER QUIZ</button>
-    <div class="panel">
-      <p>広島カープの背番号をどこまで記憶しているか挑戦じゃ！</p>
-      <a class="link" href="https://kkp-15.github.io/ninja-carp-number-Q/" target="_blank" rel="noopener noreferrer">▶ サイトを開く</a>
-    </div>
-  </div>
-
-  <footer>
-    足跡…あなたは <span id="fakeCount" style="font-size: 1.5rem; font-weight: bold; color: #ffcc00;"></span> 人目の訪問者 🐾<br>
+  <h1>web忍者の砦 - 巻物リンク集</h1>  <hr>  <!-- 本文（アコーディオン） -->  <!-- ここに大カテゴリと小カテゴリが続く -->  <hr>  <footer>
+    足跡…あなたは <span id="fakeCount" class="highlight-count"></span> 人目の訪問者 🐾<br>
     （知らんけど）<br>
-    ※このカウンターは気まぐれです🥷<br>
+    ※このカウンターは気まぐれです🥷<br><br>
     📱 <a href="https://x.com/kkp_webninja" target="_blank" rel="noopener noreferrer">@kkp_webninja</a>
-  </footer>
-
-  <script>
+  </footer>  <script>
     // フェイク訪問者数
     const count = 1000 + Math.floor(Math.random() * 9000);
     document.getElementById("fakeCount").textContent = count.toString().padStart(5, '0');
@@ -197,6 +140,5 @@
         panel.style.display = panel.style.display === "block" ? "none" : "block";
       });
     }
-  </script>
-</body>
+  </script></body>
 </html>
