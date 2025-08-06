@@ -5,17 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>web忍者の砦 - 巻物リンク集</title>
 
-<!-- ✅ SEO設定 -->
-<meta name="description" content="無料で使える・遊べる忍者アプリ集。本丸のQRツール、二の丸の集中タイマー、三の丸の占い・ゲームなど、スマホ・PC対応の便利で楽しいツール満載。">
-<meta name="keywords" content="QRコード, タイマー, おみくじ, ビンゴ, クイズ, 無料, 忍者, Webアプリ">
-
-<!-- ✅ OGP設定 -->
-<meta property="og:title" content="web忍者の本丸 - 無料で使える忍者ツール集" />
-<meta property="og:description" content="QRコード作成・履歴管理・タイマー・占い・ビンゴなど無料で楽しめる忍者ツールを集結！" />
+<!-- OGP設定 -->
+<meta property="og:title" content="web忍者の本丸 - QRコード作成＆履歴管理ができる無料ツール集" />
+<meta property="og:description" content="QRコード作成や読み取り履歴の管理、本丸おすすめツールをはじめ、タイマー・おみくじ・ビンゴ・クイズ・ゲームなど、無料で使える忍者アプリ集。スマホ・PC対応で便利＆楽しいWebツールが満載。" />
 <meta property="og:image" content="https://kkpwebninja.com/card.png" />
 <meta property="og:url" content="https://kkpwebninja.com/" />
 <meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary_large_image">
 
 <style>
   body {
@@ -35,10 +30,21 @@
     color: #666;
     margin-bottom: 1rem;
   }
+  .search-box {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  .search-box input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 90%;
+    max-width: 400px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+  }
   .nav-links {
     text-align: center;
     margin-bottom: 1rem;
-    font-size: 0.95rem;
   }
   .nav-links a {
     margin: 0 0.5rem;
@@ -46,36 +52,18 @@
     text-decoration: underline;
     font-weight: bold;
   }
-  .search-box {
-    text-align: center;
-    margin: 1rem 0;
-  }
-  .search-box input {
-    width: 80%;
-    max-width: 400px;
-    padding: 0.5rem;
-    font-size: 1rem;
-  }
-  .top-buttons {
-    text-align: center;
-    margin-bottom: 1.5rem;
-  }
-  .top-buttons button {
-    margin: 0 0.5rem;
-    padding: 0.5rem 1rem;
-    border: none;
-    background-color: #1565c0;
-    color: white;
-    border-radius: 6px;
-    cursor: pointer;
-  }
-  .top-buttons button:hover {
-    background-color: #0d47a1;
-  }
   h2 {
     margin-top: 2rem;
-    color: #444;
+    padding: 0.3rem 0.5rem;
+    border-radius: 6px;
+    color: #fff;
   }
+  #honmaru { background-color: #d32f2f; }
+  #ninomaru { background-color: #1565c0; }
+  #sannomaru { background-color: #388e3c; }
+  #yagura { background-color: #f57c00; }
+  #chikagura { background-color: #6a1b9a; }
+  #doumei { background-color: #455a64; }
   .accordion {
     background-color: #fff;
     border: 1px solid #ccc;
@@ -95,7 +83,6 @@
     position: absolute;
     right: 1rem;
     font-size: 1.2rem;
-    transition: transform 0.3s;
   }
   .accordion.active:after {
     content: '−';
@@ -131,13 +118,32 @@
     font-size: 0.95rem;
     line-height: 1.5;
   }
-  .desc strong {
-    color: #000;
-  }
   .recommend {
     font-size: 0.85rem;
     color: #555;
     margin-top: 0.3rem;
+  }
+  .top-buttons {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  .top-buttons button {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #1565c0;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .top-buttons button:hover {
+    background-color: #0d47a1;
+  }
+  .no-results {
+    text-align: center;
+    color: #999;
+    margin-top: 1rem;
+    font-size: 1rem;
   }
   footer {
     margin-top: 2rem;
@@ -157,6 +163,10 @@
 <h1>web忍者の砦</h1>
 <p class="subtitle">忍びの知恵と術が集う、影の本丸リンク集</p>
 
+<div class="search-box">
+  <input type="text" id="searchInput" placeholder="🔍 リアルタイム検索（キーワードを入力すると絞り込み）">
+</div>
+
 <div class="nav-links">
   <a href="#honmaru">本丸</a>|
   <a href="#ninomaru">二の丸</a>|
@@ -164,10 +174,6 @@
   <a href="#yagura">櫓</a>|
   <a href="#chikagura">地下蔵</a>|
   <a href="#doumei">同盟</a>
-</div>
-
-<div class="search-box">
-  <input type="text" id="searchInput" placeholder="🔍 ツール名で検索..." onkeyup="filterLinks()">
 </div>
 
 <div class="top-buttons">
@@ -180,13 +186,13 @@
 <div class="accordion">📷 QRコード作成</div>
 <div class="panel">
   <a class="link" href="https://qrhattori.kkpwebninja.com/" target="_blank">▶ このツールを使ってみる</a>
-  <div class="desc"><strong>URLやテキストから即座にQRコードを生成</strong>できる便利ツール。イベント案内・チラシ・名刺にも最適。</div>
+  <div class="desc">URLやテキストから即座にQRコードを生成できる便利ツール。</div>
 </div>
 
 <div class="accordion">📋 QRコード履歴帳</div>
 <div class="panel">
   <a class="link" href="https://qrrekisi.kkpwebninja.com/" target="_blank">▶ このツールを使ってみる</a>
-  <div class="desc"><strong>読み取ったQRコードを自動保存・管理</strong>。履歴からすぐ再アクセス可能。</div>
+  <div class="desc">読み取ったQRコードを自動保存し、履歴からすぐにアクセス可能。</div>
 </div>
 
 <!-- 二の丸 -->
@@ -194,13 +200,13 @@
 <div class="accordion">🕓 もくもくタイマー</div>
 <div class="panel">
   <a class="link" href="https://mokumoku-time.kkpwebninja.com/" target="_blank">▶ このツールを使ってみる</a>
-  <div class="desc">作業と休憩を自動管理する<strong>ポモドーロタイマー</strong>。集中力向上に。</div>
+  <div class="desc">作業と休憩を繰り返すポモドーロタイマーで集中力を維持。</div>
 </div>
 
 <div class="accordion">🎶 BGMガチャ</div>
 <div class="panel">
   <a class="link" href="https://bgm-gacha.kkpwebninja.com/" target="_blank">▶ このツールを使ってみる</a>
-  <div class="desc"><strong>作業用BGMをランダム再生</strong>。勉強・読書・作業時の気分転換に。</div>
+  <div class="desc">作業やリラックス用BGMをランダム再生。</div>
 </div>
 
 <!-- 三の丸 -->
@@ -208,31 +214,25 @@
 <div class="accordion">🥷 忍者おみくじ</div>
 <div class="panel">
   <a class="link" href="https://ninja-omikuji.kkpwebninja.com/" target="_blank">▶ このツールを使ってみる</a>
-  <div class="desc">毎日の運勢を占う<strong>オンラインおみくじ</strong>。ラッキーアイテム付き。</div>
+  <div class="desc">毎日の運勢を占うおみくじ。ラッキーアイテム付き。</div>
 </div>
 
 <div class="accordion">🎯 宝くじシミュ</div>
 <div class="panel">
   <a class="link" href="https://takarakuji-sim.kkpwebninja.com/" target="_blank">▶ このツールを使ってみる</a>
-  <div class="desc">実際の確率を再現した<strong>ジャンボ宝くじシミュレーター</strong>。</div>
+  <div class="desc">ジャンボ宝くじの当選確率を再現したシミュレーター。</div>
 </div>
 
 <div class="accordion">🎲 ビンゴマシン</div>
 <div class="panel">
   <a class="link" href="https://bingomachine.kkpwebninja.com/" target="_blank">▶ このツールを使ってみる</a>
-  <div class="desc">イベントで使える<strong>オンラインビンゴ抽選機</strong>。</div>
+  <div class="desc">1〜75の数字をランダム抽選するビンゴマシン。</div>
 </div>
 
 <div class="accordion">🃏 ビンゴカード生成</div>
 <div class="panel">
   <a class="link" href="https://bingo-card.kkpwebninja.com/" target="_blank">▶ このツールを使ってみる</a>
-  <div class="desc">印刷やスマホ表示が可能な<strong>ビンゴカード作成ツール</strong>。</div>
-</div>
-
-<div class="accordion">🟨 イエローコンプリート</div>
-<div class="panel">
-  <a class="link" href="https://kiiro.kkpwebninja.com/" target="_blank">▶ このツールを使ってみる</a>
-  <div class="desc"><strong>黄色のマスを見極める反射神経ゲーム</strong>。</div>
+  <div class="desc">印刷やスマホで使えるビンゴカードを自動生成。</div>
 </div>
 
 <!-- 櫓 -->
@@ -240,22 +240,44 @@
 <div class="accordion">👪 みんなの年齢帳</div>
 <div class="panel">
   <a class="link" href="https://agelist.kkpwebninja.com/" target="_blank">▶ このツールを使ってみる</a>
-  <div class="desc"><strong>家族や仲間の年齢を一覧管理</strong>できる便利ツール。</div>
+  <div class="desc">家族や仲間の年齢を一覧管理。</div>
 </div>
 
 <!-- 地下蔵 -->
-<h2 id="chikagura">🏯 地下蔵（専門ツール）</h2>
+<h2 id="chikagura">🏯 地下蔵（隠し部屋・専門ツール）</h2>
 <div class="accordion">🏯 創業計画書作成術</div>
 <div class="panel">
   <a class="link" href="https://sougyusyo.kkpwebninja.com/" target="_blank">▶ このツールを使ってみる</a>
-  <div class="desc">事業立ち上げに必要な<strong>創業計画書作成ツール</strong>。</div>
+  <div class="desc">起業や副業の計画書を作成。</div>
 </div>
 
 <div class="accordion">🧮 忍者計算帳</div>
 <div class="panel">
   <a class="link" href="https://calc.kkpwebninja.com/" target="_blank">▶ このツールを使ってみる</a>
-  <div class="desc"><strong>計算と履歴保存が可能な電卓</strong>。</div>
+  <div class="desc">計算と記録ができる電卓。</div>
 </div>
+
+<div class="accordion">✅ バケットリスト</div>
+<div class="panel">
+  <a class="link" href="https://bucket-list.kkpwebninja.com/" target="_blank">▶ このツールを使ってみる</a>
+  <div class="desc">人生でやりたいことを整理・記録。</div>
+</div>
+
+<div class="accordion">📱 スマホパスストーリー</div>
+<div class="panel">
+  <a class="link" href="https://smarpassstory.kkpwebninja.com/" target="_blank">▶ このツールを使ってみる</a>
+  <div class="desc">スマホを回して爆笑文章を作るパーティーゲーム。</div>
+</div>
+
+<!-- 同盟 -->
+<h2 id="doumei">🏯 同盟（関連リンク）</h2>
+<div class="accordion">🌴 RIRI studio ポモドーロタイマー</div>
+<div class="panel">
+  <a class="link" href="https://riri8.kkpwebninja.com/" target="_blank">▶ このツールを使ってみる</a>
+  <div class="desc">癒しのBGMで集中できるタイマー。</div>
+</div>
+
+<div class="no-results" id="noResults" style="display:none;">該当するツールはありません</div>
 
 <footer>
   あなたは <span id="fakeCount"></span> 人目の訪問者（知らんけど）<br>
@@ -267,30 +289,19 @@
 
 <script>
   const acc = document.getElementsByClassName("accordion");
-  const openState = JSON.parse(localStorage.getItem('accordionState') || '[]');
-
   for (let i = 0; i < acc.length; i++) {
-    if (openState[i]) {
-      acc[i].classList.add('active');
-      acc[i].nextElementSibling.style.maxHeight = acc[i].nextElementSibling.scrollHeight + "px";
-      acc[i].nextElementSibling.classList.add('open');
-    }
     acc[i].addEventListener("click", function () {
       this.classList.toggle("active");
       const panel = this.nextElementSibling;
       if (panel.style.maxHeight) {
         panel.style.maxHeight = null;
         panel.classList.remove('open');
-        openState[i] = false;
       } else {
         panel.style.maxHeight = panel.scrollHeight + "px";
         panel.classList.add('open');
-        openState[i] = true;
       }
-      localStorage.setItem('accordionState', JSON.stringify(openState));
     });
   }
-
   function toggleAll(open) {
     for (let i = 0; i < acc.length; i++) {
       const panel = acc[i].nextElementSibling;
@@ -298,34 +309,34 @@
         acc[i].classList.add('active');
         panel.style.maxHeight = panel.scrollHeight + "px";
         panel.classList.add('open');
-        openState[i] = true;
       } else {
         acc[i].classList.remove('active');
         panel.style.maxHeight = null;
         panel.classList.remove('open');
-        openState[i] = false;
       }
     }
-    localStorage.setItem('accordionState', JSON.stringify(openState));
   }
+  const count = 1000 + Math.floor(Math.random() * 9000);
+  document.getElementById("fakeCount").textContent = count.toString().padStart(5, '0');
 
-  function filterLinks() {
-    const keyword = document.getElementById("searchInput").value.toLowerCase();
+  // リアルタイム検索
+  document.getElementById("searchInput").addEventListener("input", function () {
+    const filter = this.value.toLowerCase();
+    let visibleCount = 0;
     for (let i = 0; i < acc.length; i++) {
-      const text = acc[i].innerText.toLowerCase();
+      const text = acc[i].textContent.toLowerCase();
       const panel = acc[i].nextElementSibling;
-      if (text.includes(keyword)) {
+      if (text.includes(filter)) {
         acc[i].style.display = "";
         panel.style.display = "";
+        visibleCount++;
       } else {
         acc[i].style.display = "none";
         panel.style.display = "none";
       }
     }
-  }
-
-  const count = 1000 + Math.floor(Math.random() * 9000);
-  document.getElementById("fakeCount").textContent = count.toString().padStart(5, '0');
+    document.getElementById("noResults").style.display = visibleCount === 0 ? "block" : "none";
+  });
 </script>
 
 </body>
