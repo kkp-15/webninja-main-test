@@ -279,6 +279,25 @@
 
 <div class="no-results" id="noResults" style="display:none;">該当するツールはありません</div>
 
+  <div id="bookmarkTip" style="text-align: center; margin-top: 2rem; color: #333;"></div>
+
+<script>
+  const ua = navigator.userAgent.toLowerCase();
+  const tip = document.getElementById("bookmarkTip");
+
+  if (/iphone|ipad/.test(ua) && /safari/.test(ua)) {
+    tip.innerHTML = "📌 ホーム画面に追加するには<br>Safariの「共有」→「ホーム画面に追加」";
+  } else if (/android/.test(ua)) {
+    tip.innerHTML = "📌 よく使うなら<br>ブラウザ右上の「︙」→「ホーム画面に追加」がおすすめ！";
+  } else if (/macintosh/.test(ua)) {
+    tip.innerHTML = "📌 ブックマークするには ⌘ Command + D を押すでござる！";
+  } else if (/windows/.test(ua)) {
+    tip.innerHTML = "📌 ブックマークするには Ctrl + D を押すでござる！";
+  } else {
+    tip.innerHTML = "📌 お気に入り登録やホーム画面追加をどうぞ！";
+  }
+</script>
+  
 <footer>
   あなたは <span id="fakeCount"></span> 人目の訪問者（知らんけど）<br>
   ※このカウンターは気まぐれです。<br><br>
