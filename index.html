@@ -12,6 +12,11 @@
 <meta property="og:url" content="https://kkpwebninja.com/" />
 <meta property="og:type" content="website" />
 
+<!-- ファビコン（タブのアイコン） -->
+<link rel="icon" href="/kkpninja.jpg" type="image/jpeg">
+<!-- ホーム画面用アイコン（スマホショートカット） -->
+<link rel="apple-touch-icon" href="/kkpninja.jpg">
+
 <style>
   body {
     background-color: #f9f9f9;
@@ -75,18 +80,14 @@
     transition: background-color 0.3s;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   }
-  .accordion:hover {
-    background-color: #f0f0f0;
-  }
+  .accordion:hover { background-color: #f0f0f0; }
   .accordion:after {
     content: '+';
     position: absolute;
     right: 1rem;
     font-size: 1.2rem;
   }
-  .accordion.active:after {
-    content: '−';
-  }
+  .accordion.active:after { content: '−'; }
   .panel {
     max-height: 0;
     overflow: hidden;
@@ -96,9 +97,7 @@
     border-radius: 0 0 12px 12px;
     padding: 0 1rem;
   }
-  .panel.open {
-    padding: 0.5rem 1rem 1rem;
-  }
+  .panel.open { padding: 0.5rem 1rem 1rem; }
   a.link {
     display: inline-block;
     margin-top: 0.5rem;
@@ -111,18 +110,9 @@
     border-radius: 8px;
     transition: background-color 0.2s;
   }
-  a.link:hover {
-    background-color: #bbdefb;
-  }
-  .desc {
-    font-size: 0.95rem;
-    line-height: 1.6;
-  }
-  .recommend {
-    font-size: 0.85rem;
-    color: #555;
-    margin-top: 0.3rem;
-  }
+  a.link:hover { background-color: #bbdefb; }
+  .desc { font-size: 0.95rem; line-height: 1.6; }
+  .recommend { font-size: 0.85rem; color: #555; margin-top: 0.3rem; }
   .top-buttons {
     text-align: center;
     margin-bottom: 1.5rem;
@@ -136,9 +126,7 @@
     border-radius: 6px;
     cursor: pointer;
   }
-  .top-buttons button:hover {
-    background-color: #0d47a1;
-  }
+  .top-buttons button:hover { background-color: #0d47a1; }
   .no-results {
     text-align: center;
     color: #999;
@@ -183,136 +171,160 @@
 
 <!-- 本丸 -->
 <h2 id="honmaru">🏯 本丸（おすすめツール）</h2>
+
 <div class="accordion">🎲 サイコロの術</div>
 <div class="panel">
-  <a class="link" href="https://dise.kkpwebninja.com/" target="_blank">▶ このツールを使ってみる</a>
+  <a class="link" href="https://dice.kkpwebninja.com/" target="_blank" rel="noopener">▶ このツールを使ってみる</a>
   <div class="desc">数字をランダムに出すサイコロの術！対面・オンライン・一人遊びまで、あらゆるシーンで使える運試しの決定版。</div>
 </div>
 
 <div class="accordion">📷 QRコード作成</div>
 <div class="panel">
-  <a class="link" href="https://qrhattori.kkpwebninja.com/" target="_blank">▶ このツールを使ってみる</a>
+  <a class="link" href="https://qrhattori.kkpwebninja.com/" target="_blank" rel="noopener">▶ このツールを使ってみる</a>
   <div class="desc">URLやテキストから即座にQRコードを生成できる無料オンラインツール。イベント案内、名刺、チラシ、ショップカードなどあらゆるシーンで活用可能。スマホ・PC対応で誰でも簡単に作成できます。</div>
 </div>
 
 <div class="accordion">📋 QRコード履歴帳</div>
 <div class="panel">
-  <a class="link" href="https://qrrekisi.kkpwebninja.com/" target="_blank">▶ このツールを使ってみる</a>
-  <div class="desc">スマホやPCで読み取ったQRコードを自動的に保存し、履歴からワンクリックで再アクセス可能。買い物メモ、イベント入場コード、会員ページのURLなど日常からビジネスまで幅広く活用できます。</div>
+  <a class="link" href="https://qrrekisi.kkpwebninja.com/" target="_blank" rel="noopener">▶ このツールを使ってみる</a>
+  <div class="desc">スマホやPCで読み取ったQRコードを自動保存。履歴からワンクリックで再アクセス可能。買い物メモ、イベント入場コード、会員ページURLなどに。</div>
 </div>
 
 <!-- 二の丸 -->
 <h2 id="ninomaru">🏯 二の丸（集中・時間術）</h2>
+
 <div class="accordion">🕓 もくもくタイマー</div>
 <div class="panel">
-  <a class="link" href="https://mokumoku-time.kkpwebninja.com/" target="_blank">▶ このツールを使ってみる</a>
-  <div class="desc">25分の作業と5分の休憩を繰り返すポモドーロタイマー。集中力を維持しつつ効率的に作業を進められ、勉強・在宅ワーク・クリエイティブ作業などに最適です。</div>
+  <a class="link" href="https://mokumoku-time.kkpwebninja.com/" target="_blank" rel="noopener">▶ このツールを使ってみる</a>
+  <div class="desc">25分作業+5分休憩のポモドーロタイマー。勉強・在宅ワーク・創作にちょうどいいリズム作りをサポート。</div>
 </div>
 
 <div class="accordion">🎶 BGMガチャ</div>
 <div class="panel">
-  <a class="link" href="https://bgm-gacha.kkpwebninja.com/" target="_blank">▶ このツールを使ってみる</a>
-  <div class="desc">作業用BGMや癒しの音楽をランダムで再生するオンラインツール。集中力アップやリラックス、気分転換におすすめです。</div>
+  <a class="link" href="https://bgm-gacha.kkpwebninja.com/" target="_blank" rel="noopener">▶ このツールを使ってみる</a>
+  <div class="desc">作業用やリラックスBGMをランダム再生。集中・気分転換に。</div>
 </div>
 
 <!-- 三の丸 -->
 <h2 id="sannomaru">🏯 三の丸（遊び・占い）</h2>
+
 <div class="accordion">🥷 忍者おみくじ</div>
 <div class="panel">
-  <a class="link" href="https://ninja-omikuji.kkpwebninja.com/" target="_blank">▶ このツールを使ってみる</a>
-  <div class="desc">毎日の運勢を手軽に占える無料オンラインおみくじ。ラッキーアイテム付きで話題作りや気分転換に最適です。</div>
+  <a class="link" href="https://ninja-omikuji.kkpwebninja.com/" target="_blank" rel="noopener">▶ このツールを使ってみる</a>
+  <div class="desc">毎日の運勢を手軽に占える無料オンラインおみくじ。ラッキーアイテム付きで話題作りにも◎</div>
 </div>
 
 <div class="accordion">🎯 宝くじシミュ</div>
 <div class="panel">
-  <a class="link" href="https://takarakuji-sim.kkpwebninja.com/" target="_blank">▶ このツールを使ってみる</a>
-  <div class="desc">ジャンボ宝くじの実際の当選確率を再現したシミュレーター。現実的な当選率を知ることで夢とのギャップを楽しめます。</div>
+  <a class="link" href="https://takarakuji-sim.kkpwebninja.com/" target="_blank" rel="noopener">▶ このツールを使ってみる</a>
+  <div class="desc">ジャンボ宝くじの当選確率を再現。現実の数字を知って夢とのギャップを楽しもう。</div>
 </div>
 
 <div class="accordion">🎲 ビンゴマシン</div>
 <div class="panel">
-  <a class="link" href="https://bingomachine.kkpwebninja.com/" target="_blank">▶ このツールを使ってみる</a>
-  <div class="desc">1〜75の数字を重複なしでランダム抽選。忘年会、結婚式二次会、学校行事などあらゆるイベントで盛り上がるビンゴ抽選機。</div>
+  <a class="link" href="https://bingomachine.kkpwebninja.com/" target="_blank" rel="noopener">▶ このツールを使ってみる</a>
+  <div class="desc">1〜75の数字を重複なしでランダム抽選。忘年会・二次会・学校行事で大活躍。</div>
 </div>
 
 <div class="accordion">🃏 ビンゴカード生成</div>
 <div class="panel">
-  <a class="link" href="https://bingo-card.kkpwebninja.com/" target="_blank">▶ このツールを使ってみる</a>
-  <div class="desc">印刷やスマホ表示ができるビンゴカードを自動生成。イベント準備が簡単にできます。</div>
+  <a class="link" href="https://bingo-card.kkpwebninja.com/" target="_blank" rel="noopener">▶ このツールを使ってみる</a>
+  <div class="desc">印刷やスマホ表示ができるビンゴカードを自動生成。イベント準備が一気にラク。</div>
 </div>
+
+<!-- ▼ 追加：クイズ2件（三の丸） -->
+<div class="accordion">⚾ CARP クイズ（背番号）</div>
+<div class="panel">
+  <a class="link" href="https://kkp-15.github.io/ninja-carp-number-Q/" target="_blank" rel="noopener">▶ このツールを使ってみる</a>
+  <div class="desc">あなたは何人のカープ選手の背番号を覚えている？1分間クイズに挑戦！記憶力と反射でベストスコアを狙え。</div>
+</div>
+
+<div class="accordion">⚾ TIGERS クイズ（背番号）</div>
+<div class="panel">
+  <a class="link" href="https://tigers-q.kkpwebninja.com/" target="_blank" rel="noopener">▶ このツールを使ってみる</a>
+  <div class="desc">あなたは何人の阪神タイガース選手の背番号を覚えている？1分間クイズに挑戦！友達とスコア対決も楽しい。</div>
+</div>
+<!-- ▲ 追加ここまで -->
 
 <!-- 櫓 -->
 <h2 id="yagura">🏯 櫓（管理ツール）</h2>
+
 <div class="accordion">👪 みんなの年齢帳</div>
 <div class="panel">
-  <a class="link" href="https://agelist.kkpwebninja.com/" target="_blank">▶ このツールを使ってみる</a>
-  <div class="desc">家族や友人、職場メンバーなど複数人の年齢や誕生日を一覧で管理。記念日忘れ防止やスケジュール管理に役立ちます。</div>
+  <a class="link" href="https://agelist.kkpwebninja.com/" target="_blank" rel="noopener">▶ このツールを使ってみる</a>
+  <div class="desc">家族や友人、職場メンバーなど複数人の年齢・誕生日を一覧管理。記念日忘れ防止に。</div>
 </div>
 
 <!-- 地下蔵 -->
 <h2 id="chikagura">🏯 地下蔵（隠し部屋・専門ツール）</h2>
+
 <div class="accordion">📜 創業計画書作成術</div>
 <div class="panel">
-  <a class="link" href="https://sougyusyo.kkpwebninja.com/" target="_blank">▶ このツールを使ってみる</a>
-  <div class="desc">事業立ち上げや副業のスタートに必要な創業計画書をWeb上で簡単に作成できるツール。</div>
+  <a class="link" href="https://sougyusyo.kkpwebninja.com/" target="_blank" rel="noopener">▶ このツールを使ってみる</a>
+  <div class="desc">事業立ち上げや副業開始に必要な創業計画書をWebで作成。下書き〜清書までスムーズに。</div>
 </div>
 
 <div class="accordion">🧮 忍者計算帳</div>
 <div class="panel">
-  <a class="link" href="https://calc.kkpwebninja.com/" target="_blank">▶ このツールを使ってみる</a>
-  <div class="desc">計算した数値をそのまま記録として残せる電卓アプリ。家計簿や業務計算に活用可能。</div>
+  <a class="link" href="https://calc.kkpwebninja.com/" target="_blank" rel="noopener">▶ このツールを使ってみる</a>
+  <div class="desc">計算結果を履歴として保存できる電卓。家計簿や日々の計算メモに。</div>
 </div>
 
 <div class="accordion">✅ バケットリスト</div>
 <div class="panel">
-  <a class="link" href="https://bucket-list.kkpwebninja.com/" target="_blank">▶ このツールを使ってみる</a>
-  <div class="desc">人生でやりたいことをリスト化し、達成度を可視化。モチベーションアップに繋がります。</div>
+  <a class="link" href="https://bucket-list.kkpwebninja.com/" target="_blank" rel="noopener">▶ このツールを使ってみる</a>
+  <div class="desc">人生でやりたいことをリスト化して可視化。達成度が見えるとモチベも上がる。</div>
 </div>
 
 <div class="accordion">📱 スマホパスストーリー</div>
 <div class="panel">
-  <a class="link" href="https://smarpassstory.kkpwebninja.com/" target="_blank">▶ このツールを使ってみる</a>
-  <div class="desc">スマホを順番に回しながら「いつ・どこで・誰が・何をした」を入力して爆笑ストーリーを作るパーティーゲーム。友達や家族で盛り上がる定番です。</div>
+  <a class="link" href="https://smarpassstory.kkpwebninja.com/" target="_blank" rel="noopener">▶ このツールを使ってみる</a>
+  <div class="desc">スマホを順番に回しながら「いつ・どこで・誰が・何をした」を入力。爆笑ストーリー量産のパーティーゲーム。</div>
 </div>
 
 <!-- 同盟 -->
 <h2 id="doumei">🏯 同盟（関連リンク）</h2>
+
 <div class="accordion">🌴 RIRI studio ポモドーロタイマー</div>
 <div class="panel">
-  <a class="link" href="https://riri8.kkpwebninja.com/" target="_blank">▶ このツールを使ってみる</a>
-  <div class="desc">癒しのBGMを流しながら作業と休憩のバランスを整えるポモドーロタイマー。</div>
+  <a class="link" href="https://riri8.kkpwebninja.com/" target="_blank" rel="noopener">▶ このツールを使ってみる</a>
+  <div class="desc">癒しのBGMと共に作業と休憩のバランスを整えるタイマー。</div>
 </div>
 
 <div class="no-results" id="noResults" style="display:none;">該当するツールはありません</div>
 
-  <div id="bookmarkTip" style="text-align: center; margin-top: 2rem; color: #333;"></div>
+<!-- ブックマーク誘導 -->
+<div id="bookmarkTip" style="text-align: center; margin-top: 2rem; color: #333;"></div>
 
 <script>
-  const ua = navigator.userAgent.toLowerCase();
-  const tip = document.getElementById("bookmarkTip");
-
-  if (/iphone|ipad/.test(ua) && /safari/.test(ua)) {
-    tip.innerHTML = "📌 ホーム画面に追加するには<br>Safariの「共有」→「ホーム画面に追加」";
-  } else if (/android/.test(ua)) {
-    tip.innerHTML = "📌 よく使うなら<br>ブラウザ右上の「︙」→「ホーム画面に追加」がおすすめ！";
-  } else if (/macintosh/.test(ua)) {
-    tip.innerHTML = "📌 ブックマークするには ⌘ Command + D を押すでござる！";
-  } else if (/windows/.test(ua)) {
-    tip.innerHTML = "📌 ブックマークするには Ctrl + D を押すでござる！";
-  } else {
-    tip.innerHTML = "📌 お気に入り登録やホーム画面追加ですぐ使える";
-  }
+  // 端末別ブックマーク誘導
+  (function () {
+    const ua = navigator.userAgent.toLowerCase();
+    const tip = document.getElementById("bookmarkTip");
+    if (/iphone|ipad/.test(ua) && /safari/.test(ua)) {
+      tip.innerHTML = "📌 ホーム画面に追加するには<br>Safariの「共有」→「ホーム画面に追加」";
+    } else if (/android/.test(ua)) {
+      tip.innerHTML = "📌 よく使うなら<br>ブラウザ右上の「︙」→「ホーム画面に追加」がおすすめ！";
+    } else if (/macintosh/.test(ua)) {
+      tip.innerHTML = "📌 ブックマークするには ⌘ Command + D を押すでござる！";
+    } else if (/windows/.test(ua)) {
+      tip.innerHTML = "📌 ブックマークするには Ctrl + D を押すでござる！";
+    } else {
+      tip.innerHTML = "📌 お気に入り登録やホーム画面追加ですぐ使える";
+    }
+  })();
 </script>
-  
+
 <footer>
   あなたは <span id="fakeCount"></span> 人目の訪問者（知らんけど）<br>
   ※このカウンターは気まぐれです。<br><br>
-  X <a href="https://x.com/kkp_webninja" target="_blank">砦より発信中</a><br>
-  <a href="https://privacypolicy.kkpwebninja.com/" target="_blank">プライバシーポリシー</a> /
-  <a href="https://kkpwebninja.com/otoiawase.html" target="_blank">お問い合わせ</a>
+  X <a href="https://x.com/kkp_webninja" target="_blank" rel="noopener">砦より発信中</a><br>
+  <a href="https://privacypolicy.kkpwebninja.com/" target="_blank" rel="noopener">プライバシーポリシー</a> /
+  <a href="https://kkpwebninja.com/otoiawase.html" target="_blank" rel="noopener">お問い合わせ</a>
 </footer>
 
 <script>
+  // アコーディオン制御
   const acc = document.getElementsByClassName("accordion");
   for (let i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function () {
@@ -327,6 +339,8 @@
       }
     });
   }
+
+  // 全開/全閉
   function toggleAll(open) {
     for (let i = 0; i < acc.length; i++) {
       const panel = acc[i].nextElementSibling;
@@ -341,6 +355,8 @@
       }
     }
   }
+
+  // フェイクカウンター
   const count = 1000 + Math.floor(Math.random() * 9000);
   document.getElementById("fakeCount").textContent = count.toString().padStart(5, '0');
 
